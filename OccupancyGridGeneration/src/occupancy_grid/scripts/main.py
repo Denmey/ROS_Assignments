@@ -2,59 +2,21 @@
 
 import rospy
 import math
-from visualization_msgs.msg import Marker
-from geometry_msgs.msg import Point
 from sensor_msgs.msg import LaserScan
-from std_msgs.msg import Float32
+from nav_msgs.msg import OccupancyGrid
 
-ARROW_MARKER        = 0
-CUBE_MARKER         = 1
-SPHERE_MARKER       = 2
-CYLINDER_MARKER     = 3
-LINE_STRIP_MARKER   = 4
-LINE_LIST_MARKER    = 5
-CUBE_LIST_MARKER    = 6
-SPHERE_LIST_MARKER  = 7
-POINTS_MARKER       = 8
-# ...
+# Occupancy grid parameters
+GRID_WIDTH = 30
+GRID_HEIGHT = 30
+GRID_RESOLUTION = 0.1
 
-
-# rospy.init_node('rviz_marker')
-# marker_pub = rospy.Publisher("/visualization_marker", Marker, queue_size = 2)
-# marker = Marker()
-# marker.header.frame_id = "world"
-# # marker.header.stamp = rospy.Time.now()
-# marker.type   = POINTS_MARKER
-# marker.id     = 0
-# marker.action = 0
-# # Set the scale of the marker
-# marker.scale.x = 1.0
-# marker.scale.y = 1.0
-# marker.scale.z = 1.0
-# # Set the color
-# marker.color.r = 0.0
-# marker.color.g = 1.0
-# marker.color.b = 0.0
-# marker.color.a = 1.0
-# # Set the pose of the marker
-# marker.pose.position.x = 0
-# marker.pose.position.y = 0
-# marker.pose.position.z = 0
-# # marker.pose.orientation.x = 0.0
-# # marker.pose.orientation.y = 0.0
-# # marker.pose.orientation.z = 0.0
-# # marker.pose.orientation.w = 1.0
-# marker.points.append(Point(8,8,0))
-# rate = rospy.Rate(1)
-# # while not rospy.is_shutdown():
-# rate.sleep()
-# marker_pub.publish(marker)
 
 rospy.init_node('occupancy_grid_generator')
 rate = rospy.Rate(1)
 
-# original_publisher = rospy.Publisher('/base_scan_original', LaserScan, queue_size = 10)
+original_publisher = rospy.Publisher('/base_scan_original', LaserScan, queue_size = 10)
 no_outliers_publisher = rospy.Publisher('/base_scan_no_outliers', LaserScan, queue_size = 10)
+occupancy_grid_publisher = rospy.Publisher('/occupancy_grid', OccupancyGrid, queue_size = 10)
 
 def polar2cart(r, theta):
     x = r * math.cos(theta)
@@ -68,7 +30,6 @@ def dist2(p1, p2):
 def dist(p1, p2):
     return math.sqrt(dist2(p1, p2))
 
-# Points are in polar coords
 def remove_outliers(ranges, angle_min, angle_step):
     OVERSTEP = 3
     MAX_FLOAT = 5000.0
@@ -96,10 +57,25 @@ def remove_outliers(ranges, angle_min, angle_step):
 
 
 def process_scan(msg):
-    # original_publisher.publish(msg)
+    original_publisher.publish(msg)
 
     msg.ranges = remove_outliers(msg.ranges, msg.angle_min, msg.angle_increment)
     no_outliers_publisher.publish(msg)
+
+    occupancy_grid_msg = OccupancyGrid()
+
+
+    width = int(GRID_WIDTH / GRID_RESOLUTION)
+    height = int(GRID_HEIGHT / GRID_RESOLUTION)
+    occupancy_grid_msg.header.frame_id = "base_link"
+    occupancy_grid_msg.info.width = width
+    occupancy_grid_msg.info.height = height
+    occupancy_grid_msg.info.resolution = GRID_RESOLUTION
+    occupancy_grid_msg.info.origin.position.x = -GRID_WIDTH/2.0
+    occupancy_grid_msg.info.origin.position.y = -GRID_HEIGHT/2.0
+    occupancy_grid_msg.data = [-1] * (width * height)
+
+    occupancy_grid_publisher.publish(occupancy_grid_msg)
 
 rospy.Subscriber('base_scan', LaserScan, process_scan)
 print("Script initialization done")
