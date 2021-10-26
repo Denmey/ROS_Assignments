@@ -7,8 +7,6 @@ Panels:
         - /Global Options1
         - /Status1
         - /Grid1
-        - /Map1
-        - /Map1/Status1
       Splitter Ratio: 0.5
     Tree Height: 504
   - Class: rviz/Selection
@@ -88,7 +86,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.05000000074505806
       Style: Flat Squares
-      Topic: /base_scan
+      Topic: /base_scan_original
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -159,7 +157,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 43.70680618286133
+      Distance: 15.632364273071289
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -175,9 +173,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.2897976338863373
+      Pitch: 0.9947965145111084
       Target Frame: <Fixed Frame>
-      Yaw: 0.9304195642471313
+      Yaw: 3.2304277420043945
     Saved: ~
 Window Geometry:
   Displays:
