@@ -1,0 +1,373 @@
+https://github.com/OSLL/aido-auto-feedback/tree/49306e5013cd7d4aef1de8bfeae95b48f0a33f4d0093c9ff03800030
+
+True: Accepted
+time=1640206318.8439736 gym-duckietown 2019.0.0
+
+time=1640206319.1383567 Registering gym environment id: Duckietown-4way-v0
+time=1640206319.1385162 Registering gym environment id: Duckietown-loop_dyn_duckiebots-v0
+time=1640206319.1386156 Registering gym environment id: Duckietown-loop_empty-v0
+time=1640206319.1387417 Registering gym environment id: Duckietown-loop_obstacles-v0
+time=1640206319.1388295 Registering gym environment id: Duckietown-loop_pedestrians-v0
+time=1640206319.1389468 Registering gym environment id: Duckietown-small_loop-v0
+time=1640206319.139069 Registering gym environment id: Duckietown-small_loop_cw-v0
+time=1640206319.1391792 Registering gym environment id: Duckietown-straight_road-v0
+time=1640206319.139268 Registering gym environment id: Duckietown-straight_road_10_tiles_no_start_tile-v0
+time=1640206319.139351 Registering gym environment id: Duckietown-straight_road_no_start_tile-v0
+time=1640206319.1394758 Registering gym environment id: Duckietown-straight_road_trafficlight-v0
+time=1640206319.1395679 Registering gym environment id: Duckietown-straight_road_with_side_floor-v0
+time=1640206319.1396885 Registering gym environment id: Duckietown-udem1-v0
+time=1640206319.139804 Registering gym environment id: Duckietown-zigzag_dists-v0
+time=1640206321.11274 Falling back to non-multisampled frame buffer
+time=1640206321.1170342 Falling back to non-multisampled frame buffer
+time=1640206321.1213622 loading map file "/home/appuser/aido-auto/gym-duckietown/gym_duckietown/maps/straight_road.yaml"
+time=1640206321.1283083 loading mesh "duckiebot.obj"
+time=1640206321.1286438 loading materials from "/home/appuser/aido-auto/gym-duckietown/gym_duckietown/meshes/duckiebot.mtl"
+time=1640206321.5875053 loading texture "straight_1.png"
+time=1640206321.6044633 road_tile_size=0.585
+time=1640206321.6049957 Starting at [0.2925  0.      0.43875] 0
+time=1640206321.6053247 Pos: [0.2925  0.      0.43875] angle 0
+time=1640206321.7679973 using DuckietownEnv
+/usr/local/lib/python3.6/dist-packages/gym/spaces/box.py:74: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  "Box bound precision lowered by casting to {}".format(self.dtype)
+time=1640206321.7693467 loading mesh "duckie.obj"
+time=1640206321.8185143 loading texture "duckie.png"
+time=1640206322.4656315 Pos: [0.2925  0.      0.43875] angle 0
+time=1640206322.7402937 Pos: [0.3325  0.      0.43875] angle 0
+time=1640206322.831226 Pos: [0.3725  0.      0.43875] angle 0
+time=1640206322.9128864 Pos: [0.4125  0.      0.43875] angle 0
+time=1640206322.9896505 Pos: [0.4525  0.      0.43875] angle 0
+time=1640206323.0726612 Pos: [0.4925  0.      0.43875] angle 0
+time=1640206323.1497846 Pos: [0.5325  0.      0.43875] angle 0
+time=1640206323.2274022 Pos: [0.5725  0.      0.43875] angle 0
+time=1640206323.3065913 Pos: [0.6125  0.      0.43875] angle 0
+time=1640206323.3859403 Pos: [0.6525  0.      0.43875] angle 0
+time=1640206323.4688406 Pos: [0.6925  0.      0.43875] angle 0
+time=1640206323.5459166 Pos: [0.7325  0.      0.43875] angle 0
+time=1640206323.6240408 Pos: [0.7725  0.      0.43875] angle 0
+time=1640206323.7041833 Pos: [0.8125  0.      0.43875] angle 0
+time=1640206323.7822874 Pos: [0.8525  0.      0.43875] angle 0
+time=1640206323.8594966 Pos: [0.8925  0.      0.43875] angle 0
+time=1640206323.939366 Pos: [0.9325  0.      0.43875] angle 0
+time=1640206324.019815 Pos: [0.9725  0.      0.43875] angle 0
+time=1640206324.0970857 Pos: [1.0125  0.      0.43875] angle 0
+time=1640206324.1745377 Pos: [1.0525  0.      0.43875] angle 0
+time=1640206324.2522137 Pos: [1.0925  0.      0.43875] angle 0
+time=1640206324.3283076 Pos: [1.1325  0.      0.43875] angle 0
+time=1640206324.4064612 Pos: [1.1725  0.      0.43875] angle 0
+time=1640206324.4864476 Pos: [1.2125  0.      0.43875] angle 0
+time=1640206324.567462 Pos: [1.2525  0.      0.43875] angle 0
+time=1640206324.645398 Pos: [1.2925  0.      0.43875] angle 0
+time=1640206324.7238042 Pos: [1.3325  0.      0.43875] angle 0
+time=1640206324.8022616 Pos: [1.3725  0.      0.43875] angle 0
+time=1640206324.8783643 Pos: [1.4125  0.      0.43875] angle 0
+time=1640206324.9568262 Pos: [1.4525  0.      0.43875] angle 0
+time=1640206325.0385346 Pos: [1.4925  0.      0.43875] angle 0
+time=1640206325.1173675 Pos: [1.5325  0.      0.43875] angle 0
+time=1640206325.1940632 Pos: [1.5725  0.      0.43875] angle 0
+time=1640206325.27154 Pos: [1.6125  0.      0.43875] angle 0
+time=1640206325.347396 Pos: [1.6525  0.      0.43875] angle 0
+time=1640206325.4248683 Pos: [1.6925  0.      0.43875] angle 0
+time=1640206325.5031562 Pos: [1.7325  0.      0.43875] angle 0
+time=1640206325.5911157 Pos: [1.7725  0.      0.43875] angle 0
+time=1640206325.6709297 Pos: [1.8125  0.      0.43875] angle 0
+time=1640206325.7506638 Pos: [1.8525  0.      0.43875] angle 0
+time=1640206325.828929 Pos: [1.8925  0.      0.43875] angle 0
+time=1640206325.9056625 Pos: [1.9325  0.      0.43875] angle 0
+time=1640206325.9829707 Pos: [1.9725  0.      0.43875] angle 0
+time=1640206326.0685809 Pos: [2.0125  0.      0.43875] angle 0
+time=1640206326.1459205 Pos: [2.0525  0.      0.43875] angle 0
+time=1640206326.2240572 Pos: [2.0925  0.      0.43875] angle 0
+time=1640206326.3024344 Pos: [2.1325  0.      0.43875] angle 0
+time=1640206326.3805842 Pos: [2.1725  0.      0.43875] angle 0
+time=1640206326.4579334 Pos: [2.2125  0.      0.43875] angle 0
+time=1640206326.5378785 Pos: [2.2525  0.      0.43875] angle 0
+time=1640206326.6216512 Pos: [2.2925  0.      0.43875] angle 0
+time=1640206326.7016766 Pos: [2.3325  0.      0.43875] angle 0
+time=1640206326.7788153 Pos: [2.3725  0.      0.43875] angle 0
+time=1640206326.8573198 Pos: [2.4125  0.      0.43875] angle 0
+time=1640206326.9350665 Pos: [2.4525  0.      0.43875] angle 0
+time=1640206327.0192404 Pos: [2.4925  0.      0.43875] angle 0
+time=1640206327.0981746 Pos: [2.5325  0.      0.43875] angle 0
+time=1640206327.1772206 Pos: [2.5725  0.      0.43875] angle 0
+time=1640206327.2558527 Pos: [2.6125  0.      0.43875] angle 0
+env.road_tile_size = 0.585
+YELLOW COLOR IN HSV:  [[[ 60 255 255]]]
+Max continuous coverage:  0.00451171875
+Img:  480 640
+Rect:  24 251 66 21
+Distance based on height of found coverage:  1.349206349206349
+Max continuous coverage:  0.005289713541666667
+Img:  480 640
+Rect:  0 271 65 25
+Distance based on height of found coverage:  1.1333333333333333
+Max continuous coverage:  0.005013020833333334
+Img:  480 640
+Rect:  12 259 70 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.00509765625
+Img:  480 640
+Rect:  0 280 54 29
+Distance based on height of found coverage:  0.9770114942528735
+Max continuous coverage:  0.00634765625
+Img:  480 640
+Rect:  0 266 75 26
+Distance based on height of found coverage:  1.0897435897435896
+Max continuous coverage:  0.00494140625
+Img:  480 640
+Rect:  0 289 46 33
+Distance based on height of found coverage:  0.8585858585858586
+Max continuous coverage:  0.004801432291666667
+Img:  480 640
+Rect:  0 276 59 25
+Distance based on height of found coverage:  1.1333333333333333
+Max continuous coverage:  0.006022135416666667
+Img:  480 640
+Rect:  11 263 74 25
+Distance based on height of found coverage:  1.1333333333333333
+Max continuous coverage:  0.005751953125
+Img:  480 640
+Rect:  0 286 57 31
+Distance based on height of found coverage:  0.9139784946236559
+Max continuous coverage:  0.002783203125
+Img:  480 640
+Rect:  56 245 57 15
+Distance based on height of found coverage:  1.8888888888888888
+Max continuous coverage:  0.0038671875
+Img:  480 640
+Rect:  26 263 66 18
+Distance based on height of found coverage:  1.574074074074074
+Max continuous coverage:  0.004791666666666666
+Img:  480 640
+Rect:  0 285 64 23
+Distance based on height of found coverage:  1.2318840579710144
+Max continuous coverage:  0.005013020833333334
+Img:  480 640
+Rect:  4 262 70 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.004166666666666667
+Img:  480 640
+Rect:  24 252 64 20
+Distance based on height of found coverage:  1.4166666666666665
+Max continuous coverage:  0.00533203125
+Img:  480 640
+Rect:  0 271 63 26
+Distance based on height of found coverage:  1.0897435897435896
+Max continuous coverage:  0.00494140625
+Img:  480 640
+Rect:  12 258 69 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.004921875
+Img:  480 640
+Rect:  0 279 54 28
+Distance based on height of found coverage:  1.0119047619047619
+Max continuous coverage:  0.005859375
+Img:  480 640
+Rect:  0 266 72 25
+Distance based on height of found coverage:  1.1333333333333333
+Max continuous coverage:  0.005084635416666667
+Img:  480 640
+Rect:  20 254 71 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.0059244791666666664
+Img:  480 640
+Rect:  0 274 65 28
+Distance based on height of found coverage:  1.0119047619047619
+Max continuous coverage:  0.004791666666666666
+Img:  480 640
+Rect:  12 262 64 23
+Distance based on height of found coverage:  1.2318840579710144
+Max continuous coverage:  0.004869791666666666
+Img:  480 640
+Rect:  31 251 68 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.006591796875
+Img:  480 640
+Rect:  0 271 75 27
+Distance based on height of found coverage:  1.0493827160493827
+Max continuous coverage:  0.004833984375
+Img:  480 640
+Rect:  0 296 45 33
+Distance based on height of found coverage:  0.8585858585858586
+Max continuous coverage:  0.0030729166666666665
+Img:  480 640
+Rect:  46 251 59 16
+Distance based on height of found coverage:  1.7708333333333333
+Max continuous coverage:  0.004557291666666667
+Img:  480 640
+Rect:  12 271 70 20
+Distance based on height of found coverage:  1.4166666666666665
+Max continuous coverage:  0.003896484375
+Img:  480 640
+Rect:  26 250 63 19
+Distance based on height of found coverage:  1.4912280701754386
+Max continuous coverage:  0.005
+Img:  480 640
+Rect:  0 269 64 24
+Distance based on height of found coverage:  1.1805555555555556
+Max continuous coverage:  0.0046484375
+Img:  480 640
+Rect:  11 259 68 21
+Distance based on height of found coverage:  1.349206349206349
+Max continuous coverage:  0.0045703125
+Img:  480 640
+Rect:  0 280 52 27
+Distance based on height of found coverage:  1.0493827160493827
+Max continuous coverage:  0.005625
+Img:  480 640
+Rect:  0 266 72 24
+Distance based on height of found coverage:  1.1805555555555556
+Max continuous coverage:  0.0046484375
+Img:  480 640
+Rect:  20 254 68 21
+Distance based on height of found coverage:  1.349206349206349
+Max continuous coverage:  0.005247395833333333
+Img:  480 640
+Rect:  0 275 62 26
+Distance based on height of found coverage:  1.0897435897435896
+Max continuous coverage:  0.005859375
+Img:  480 640
+Rect:  7 261 75 24
+Distance based on height of found coverage:  1.1805555555555556
+Max continuous coverage:  0.00544921875
+Img:  480 640
+Rect:  0 283 54 31
+Distance based on height of found coverage:  0.9139784946236559
+Max continuous coverage:  0.00546875
+Img:  480 640
+Rect:  0 270 70 24
+Distance based on height of found coverage:  1.1805555555555556
+Max continuous coverage:  0.005240885416666666
+Img:  480 640
+Rect:  21 258 70 23
+Distance based on height of found coverage:  1.2318840579710144
+Max continuous coverage:  0.006136067708333333
+Img:  480 640
+Rect:  0 280 65 29
+Distance based on height of found coverage:  0.9770114942528735
+Max continuous coverage:  0.0026041666666666665
+Img:  480 640
+Rect:  0 306 32 25
+Distance based on height of found coverage:  1.1333333333333333
+Max continuous coverage:  0.003430989583333333
+Img:  480 640
+Rect:  35 258 62 17
+Distance based on height of found coverage:  1.6666666666666665
+Max continuous coverage:  0.00515625
+Img:  480 640
+Rect:  0 279 72 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.004580078125
+Img:  480 640
+Rect:  13 257 67 21
+Distance based on height of found coverage:  1.349206349206349
+Max continuous coverage:  0.004485677083333334
+Img:  480 640
+Rect:  0 278 53 26
+Distance based on height of found coverage:  1.0897435897435896
+Max continuous coverage:  0.00546875
+Img:  480 640
+Rect:  0 266 70 24
+Distance based on height of found coverage:  1.1805555555555556
+Max continuous coverage:  0.004798177083333333
+Img:  480 640
+Rect:  20 253 67 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.005247395833333333
+Img:  480 640
+Rect:  0 274 62 26
+Distance based on height of found coverage:  1.0897435897435896
+Max continuous coverage:  0.005240885416666666
+Img:  480 640
+Rect:  8 261 70 23
+Distance based on height of found coverage:  1.2318840579710144
+Max continuous coverage:  0.004798177083333333
+Img:  480 640
+Rect:  29 249 67 22
+Distance based on height of found coverage:  1.2878787878787878
+Max continuous coverage:  0.006328125
+Img:  480 640
+Rect:  0 268 72 27
+Distance based on height of found coverage:  1.0493827160493827
+Max continuous coverage:  0.004479166666666667
+Img:  480 640
+Rect:  285 107 32 43
+Distance based on height of found coverage:  0.6589147286821705
+Max continuous coverage:  0.00474609375
+Img:  480 640
+Rect:  0 278 54 27
+Distance based on height of found coverage:  1.0493827160493827
+Max continuous coverage:  0.006266276041666667
+Img:  480 640
+Rect:  5 266 77 25
+Distance based on height of found coverage:  1.1333333333333333
+Max continuous coverage:  0.0057421875
+Img:  480 640
+Rect:  280 113 36 49
+Distance based on height of found coverage:  0.5782312925170068
+Max continuous coverage:  0.006432291666666667
+Img:  480 640
+Rect:  278 115 38 52
+Distance based on height of found coverage:  0.5448717948717948
+Max continuous coverage:  0.007161458333333333
+Img:  480 640
+Rect:  276 117 40 55
+Distance based on height of found coverage:  0.5151515151515151
+Max continuous coverage:  0.007740885416666667
+Img:  480 640
+Rect:  274 120 41 58
+Distance based on height of found coverage:  0.48850574712643674
+Max continuous coverage:  0.008880208333333334
+Img:  480 640
+Rect:  271 122 44 62
+Distance based on height of found coverage:  0.45698924731182794
+Max continuous coverage:  0.01009765625
+Img:  480 640
+Rect:  268 126 47 66
+Distance based on height of found coverage: time=1640206327.3369477 Pos: [2.6525  0.      0.43875] angle 0
+time=1640206327.41703 Pos: [2.6925  0.      0.43875] angle 0
+time=1640206327.498198 Pos: [2.7325  0.      0.43875] angle 0
+time=1640206327.5764844 Pos: [2.7725  0.      0.43875] angle 0
+time=1640206327.6578138 Pos: [2.8125  0.      0.43875] angle 0
+time=1640206327.7389758 Pos: [2.8525  0.      0.43875] angle 0
+time=1640206327.8210554 Pos: [2.8925  0.      0.43875] angle 0
+time=1640206327.9031904 Pos: [2.9325  0.      0.43875] angle 0
+time=1640206327.987961 Pos: [2.9725  0.      0.43875] angle 0
+time=1640206328.0524569 Pos: [3.0125  0.      0.43875] angle 0
+ 0.4292929292929293
+Max continuous coverage:  0.011393229166666666
+Img:  480 640
+Rect:  264 130 50 70
+Distance based on height of found coverage:  0.40476190476190477
+Max continuous coverage:  0.013359375
+Img:  480 640
+Rect:  260 134 54 76
+Distance based on height of found coverage:  0.37280701754385964
+Max continuous coverage:  0.015748697916666665
+Img:  480 640
+Rect:  255 139 59 82
+Distance based on height of found coverage:  0.34552845528455284
+Max continuous coverage:  0.018541666666666668
+Img:  480 640
+Rect:  249 145 64 89
+Distance based on height of found coverage:  0.31835205992509363
+Max continuous coverage:  0.022330729166666667
+Img:  480 640
+Rect:  242 152 70 98
+Distance based on height of found coverage:  0.2891156462585034
+Max continuous coverage:  0.0270703125
+Img:  480 640
+Rect:  234 161 77 108
+Distance based on height of found coverage:  0.2623456790123457
+Max continuous coverage:  0.03387369791666667
+Img:  480 640
+Rect:  224 172 86 121
+Distance based on height of found coverage:  0.23415977961432505
+Max continuous coverage:  0.044342447916666666
+Img:  480 640
+Rect:  211 185 98 139
+Distance based on height of found coverage:  0.20383693045563547
+Max continuous coverage:  0.0601171875
+Img:  480 640
+Rect:  194 203 114 162
+Distance based on height of found coverage:  0.17489711934156377
+True: Accepted
